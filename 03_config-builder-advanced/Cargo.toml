@@ -1,0 +1,13 @@
+[package]
+name = "config-builder-advanced"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = { version= "1.1.1", features = ["behavior-version-latest"] }
+aws-credential-types = { version = "1.1.1", features = ["hardcoded-credentials"] }
+aws-sdk-cloudtrail = { version = "1.9.0", features = ["behavior-version-latest"] }
+aws-types = "1.1.1"
+tokio = { version = "1", features = ["full"] }
